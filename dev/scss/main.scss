@@ -1,0 +1,90 @@
+$MAIN_BG: #f44271;
+$MAIN_DARK: #870514;
+$MAIN_LIGHT: #b71023;
+
+body,
+html
+{
+	margin: 0;
+	padding: 0;
+	background: $MAIN_BG;
+	font-family: sans-serif;
+}
+
+.fitlic-header
+{
+	font-weight: 900;
+}
+
+.fitlic-canvas
+{
+	padding: 2em;
+}
+
+.fitlic-input
+{
+	width: 100%;
+	height: 20em;
+	border: 4px solid $MAIN_DARK;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	padding: .5em;
+	color: #870514;
+}
+
+.fitlic-input:focus
+{
+	background-color: #fffb87;
+}
+
+.fitlic-submit
+{
+	display: block;
+}
+
+.fitlic-word-use,
+.fitlic-word-use tr,
+.fitlic-word-use td
+{
+	border: 2px solid $MAIN_DARK;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.fitlic-word-use
+{
+	background-color: #fff;
+	border: 4px solid $MAIN_DARK;
+	
+	td,
+	th
+	{
+		padding: .25em 1em;
+	}
+	
+	th
+	{
+		background-color: $MAIN_DARK;
+		color: $MAIN_BG;
+	}
+}
+
+.fitlic-col-num-o-uses
+{
+	text-align: right;
+}
+
+.fitlic-1-word-use
+{
+	background-color: #bf9;
+}
+
+.fitlic-few-word-uses
+{
+	background-color: #9bf;
+}
+
+.fitlic-many-word-uses
+{
+	background-color: #fb9;
+}
