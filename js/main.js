@@ -64,6 +64,15 @@
 			} ) ( opacity );
 		}
 	}
+
+const not_adverbs = Object.freeze([
+	'ugly',
+	'cuddly',
+	'early',
+	'holy',
+	'assembly'
+]);
+
 var FitLic = {};
 
 if ( typeof isNumeric !== 'function' ) { 
@@ -411,7 +420,7 @@ WordData.prototype.adverbs = function()
 	{
 		if ( this.word_list.hasOwnProperty( k ) )
 		{
-			if ( k.match( /^[a-z]*ly$/ ) !== null )
+			if ( k.match( /^[a-z]*ly$/ ) !== null && !not_adverbs.includes( k ) )
 			{
 				adverbs.push( k );
 				total_number += this.word_list[ k ];
